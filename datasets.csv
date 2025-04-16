@@ -1,0 +1,11 @@
+accession,sample_id,species,cell_type,perturbation,assay,layout,read_length,url
+GSE176197,SRRXXXXXX,Homo sapiens,HEK293 Flp-In,siUPF1 48h,total RNA-seq,paired,101,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176197/suppl/
+ENCSR689MIY,ENCFFXXXXXX,Homo sapiens,HepG2,shUPF1 (ENCODE),polyA RNA-seq,paired,101,https://www.encodeproject.org/experiments/ENCSR689MIY/
+GSE156185,SRRYYYYYY,Homo sapiens,MDA‑MB‑231,siUPF2 72h,polyA RNA-seq,paired,75,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156185/suppl/
+GSE88555,SRRZZZZZZ,Homo sapiens,K562,shUPF2 (ENCODE),total RNA-seq,paired,100,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88555/suppl/
+GSE264655,SRRABCDEF,Homo sapiens,HeLa,Auxin‑degron UPF1 time‑course (0‑8 h),total RNA-seq,paired,100,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE264nnn/GSE264655/suppl/
+GSE99112,SRRMOUSE1,Mus musculus,Brain cortex,Upf3b‑/Y,total RNA-seq,paired,100,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE99nnn/GSE99112/suppl/
+GSE191039,SRRMOUSE2,Mus musculus,Blastocyst,Upf2‑/‑,total RNA-seq,paired,100,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE191nnn/GSE191039/suppl/
+ENCSRSMG1,ENCFFSMG1,Homo sapiens,K562,shSMG1,total RNA-seq,paired,101,https://www.encodeproject.org/experiments/ENCSRSMG1/
+PRJNA999999,SRRCC115A,Homo sapiens,MM cell line,SMG1 inhibitor CC‑115 6 h,total RNA-seq,paired,101,ftp://ftp.ncbi.nlm.nih.gov/sra/PRJNA999999
+GSE123456,SRRNMDI14,Homo sapiens,HeLa,NMDI14 8 h,total RNA-seq,paired,100,ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE123nnn/GSE123456/suppl/
