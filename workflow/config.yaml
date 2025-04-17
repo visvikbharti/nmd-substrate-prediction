@@ -1,0 +1,5 @@
+species_index:
+  Homo_sapiens: "env/salmon_index/human"
+  Mus_musculus: "env/salmon_index/mouse"
+  Saccharomyces_cerevisiae: "env/salmon_index/yeast"
+threads: 8

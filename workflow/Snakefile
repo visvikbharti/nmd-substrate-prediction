@@ -1,0 +1,28 @@
+import pandas as pd, yaml
+configfile: "workflow/config.yaml"
+
+SAMPLES = pd.read_csv("data/metadata/datasets.csv").sample_id.tolist()
+
+rule all:
+    input: expand("data/processed/{sample}/quant.sf", sample=SAMPLES)
+
+rule download:
+    output: temp("data/raw/{sample}.fastq.gz")
+    params:
+        url=lambda wc: pd.read_csv("data/metadata/datasets.csv")
+                        .set_index("sample_id").loc[wc.sample, "url"]
+    shell: """
+        aria2c -x 6 -o {output} {params.url}
+    """
+
+rule fastp:
+    input: "data/raw/{sample}.fastq.gz"
+    output: "data/processed/{sample}.trim.fastq.gz"
+    log: "results/qc/{sample}_fastp.html"
+    shell: "fastp -i {input} -o {output} --thread 8 --html {log}"
+
+rule salmon:
+    input: "data/processed/{sample}.trim.fastq.gz"
+    output: "data/processed/{sample}/quant.sf"
+    params: index="env/salmon_index"
+    shell: "salmon quant -i {params.index} -l A -r {input} -p 8 -o {output.dir}"
