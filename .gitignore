@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+# Conda
+env/
+# Snakemake/Salmon outputs
+data/raw/
+data/processed/
+results/
+workflow/.snakemake/
+# Editors
+.vscode/
+.idea/
